@@ -2,18 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Score Keeper</title>
+    <title>Virtual Referee</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium:600|Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
 
-    <p>Playing to: <span>5</span></p>
+    <h1 class="title">Virtual Referee</h1>
+    <p class="intro">Do you have a score to settle? Track it with this score keeper. Choose your goal and play on!</p>
+    <h1 id="scoreboard"><span id="p1Display">0</span> - <span id="p2Display">0</span></h1>
 
-    <input type="number">
-    <button id="p1">Player 1</button>
-    <button id="p2">Player 2</button>
-    <button id="reset">Reset</button>
+    <p id="playTo">Playing to: <input type="number" id="scoreGoal"></p>
+
+    <div class="playerButtons">
+      <button class="btn" id="p1">1</button>
+      <button class="btn" id="p2">2</button>
+    </div>
+    <span class="resetContainer"><button class="resetBtn" id="reset">Reset</button></span>
 
     <script type="text/javascript" src="script.js"></script>
 
